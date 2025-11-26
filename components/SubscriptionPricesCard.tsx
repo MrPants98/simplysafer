@@ -11,7 +11,7 @@ import { ChevronRight } from "lucide-react";
 export function SubscriptionPricesCard() {
     return (
         
-        <Card className="mt-16 relative w-[900px]">
+        <Card className="relative w-[900px]">
             <ShineBorder shineColor={["#FF0080", "#7928CA", "#0070F3", "#38bdf8"]} />
             <CardHeader>
                 <CardDescription className="text-center text-lg">Pricing</CardDescription>
@@ -25,7 +25,7 @@ export function SubscriptionPricesCard() {
                 </div>
             </CardContent>
             <CardFooter className="flex justify-center">
-                <Link href={"/docs"}><Button size={"lg"}>Compare Tiers<ChevronRight></ChevronRight></Button></Link>
+                <Link href={"/docs"}><Button size={"lg"} variant={"ghost"}>Compare Tiers<ChevronRight></ChevronRight></Button></Link>
             </CardFooter>
         </Card>
     )
