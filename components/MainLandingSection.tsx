@@ -10,7 +10,8 @@ import { RainbowButton } from "@/components/ui/rainbow-button";
 
 export default function MainLandingSection() {
   return (
-    <div className="flex flex-col justify-center">
+    <>
+      <div className="flex flex-col justify-center">
         {AnimatedGradientTextDemo()}
         <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl dark:text-white text-center mt-4">
             Toxicity Detection <br /> Made <AuroraText>Simple</AuroraText>
@@ -28,7 +29,9 @@ export default function MainLandingSection() {
             <Link href={"/register"}>Get Started for Free!</Link>
         </RainbowButton>
         </div>
-    </div>
+      </div>
+    </>
+    
   );
 }
 

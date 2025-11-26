@@ -1,6 +1,7 @@
 "use client";
 
 import MainLandingSection from "@/components/MainLandingSection";
+import { SubscriptionPricesCard } from "@/components/SubscriptionPricesCard";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       id="opening"
     >
       <MainLandingSection />
+      <SubscriptionPricesCard />
     </div>
   );
 }
