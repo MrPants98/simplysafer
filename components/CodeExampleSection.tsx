@@ -17,7 +17,7 @@ export function CodeExampleSection() {
                         <ol>
                             <p>1. Add the Simply Safer SDK to your project</p>
                             <p>2. Create the Simply Safer object with your API Key</p>
-                            <p>2. Create the Simply Safer object with your API Key</p>
+                            <p>3. Call the scan function with the message</p>
                             <p>4. Use the data however you want</p>
                         </ol>
                     </div>
