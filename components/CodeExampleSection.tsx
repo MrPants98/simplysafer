@@ -27,7 +27,7 @@ export function CodeExampleSection() {
                 </div>
             </CardContent>
             <CardFooter className="flex justify-center items-center">
-                <Button><Link href="/docs">Learn More</Link></Button>
+                <Button variant={"ghost"}><Link href="/docs">Learn More</Link></Button>
             </CardFooter>
             <BorderBeam duration={8} size={200} className="from-transparent via-blue-700 to-transparent"/>
             <BorderBeam duration={8} delay={2} size={200} className="from-transparent via-purple-700 to-transparent"/>
