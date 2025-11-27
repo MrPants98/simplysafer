@@ -1,0 +1,22 @@
+import { auth } from "@/auth";
+import OAuthButtons from "@/components/oauth-buttons";
+import { AuroraText } from "@/components/ui/aurora-text";
+import { MagicCard } from "@/components/ui/magic-card";
+import { redirect } from "next/navigation";
+
+export default async function Register() {
+  const session = await auth();
+
+  if (session?.user) redirect("/dashboard");
+
+  return (
+    <div className="w-full h-full flex justify-center items-center">
+      <MagicCard className="rounded-2xl flex justify-center p-8 pl-16 pr-16">
+        <AuroraText className="font-bold text-7xl text-center">
+          Register
+        </AuroraText>
+        <OAuthButtons />
+      </MagicCard>
+    </div>
+  );
+}

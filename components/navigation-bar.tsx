@@ -3,8 +3,13 @@
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { RainbowButton } from "./ui/rainbow-button";
+import { usePathname } from "next/navigation";
 
 export function NavigationBar() {
+    const pathname = usePathname();
+
+    if (pathname === '/dashboard') return null;
+
     return (
         <div className="flex w-full p-2 sticky top-0 z-50 bg-slate-200 dark:bg-gray-950 pl-4 lr-4">
             <div className="flex gap-4 items-center flex-6">
