@@ -2,6 +2,7 @@ import { CodeBlock, dracula } from "react-code-blocks";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { BorderBeam } from "./ui/border-beam";
 
 export function CodeExampleSection() {
     return (
@@ -28,6 +29,10 @@ export function CodeExampleSection() {
             <CardFooter className="flex justify-center items-center">
                 <Button><Link href="/docs">Learn More</Link></Button>
             </CardFooter>
+            <BorderBeam duration={8} size={200} className="from-transparent via-blue-700 to-transparent"/>
+            <BorderBeam duration={8} delay={2} size={200} className="from-transparent via-purple-700 to-transparent"/>
+            <BorderBeam duration={8} delay={4} size={200} className="from-transparent via-blue-700 to-transparent"/>
+            <BorderBeam duration={8} delay={6} size={200} className="from-transparent via-purple-700 to-transparent"/>
         </Card>
     );
 }
